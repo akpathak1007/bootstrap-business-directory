@@ -76,7 +76,70 @@
         <h1 class="mb-4 display-1 text-capitalize">
           Trusted to help guide entrepreneurs make better financial decisions
         </h1>
-        <button class="btn btn-info btn-lg">Get Offer</button>
+        <button
+          class="btn btn-info btn-lg"
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#getOfferModal"
+        >
+          Get Offer
+        </button>
+      </div>
+      <!-- ! Form modal -->
+      <div
+        class="modal fade"
+        id="getOfferModal"
+        aria-hidden="true"
+        aria-labelledby="getOfferModalLabel"
+      >
+        <div class="modal-dialog text-dark">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="">New message</h5>
+              <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <form action="">
+                <div class="mb-2">
+                  <label for="form-label">Recipient:</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="mb-3">
+                  <label for="" class="form-label">First Name</label
+                  ><input
+                    type="text"
+                    placeholder="First Name"
+                    class="form-control"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="" class="form-label">Last Name</label
+                  ><input
+                    type="text"
+                    placeholder="Last Name"
+                    class="form-control"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="" class="form-label">Recipient</label
+                  ><textarea
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="5"
+                    class="form-control"
+                  ></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-danger" data-bs-dismiss="modal">
+                Close
+              </button>
+              <button class="btn btn-primary">Send Message</button>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -110,7 +173,138 @@
                   We keep things simple, putting you in control so you can make
                   informed choices
                 </p>
-                <button class="btn btn-light">What we do</button>
+                <button
+                  type="button"
+                  class="btn btn-light"
+                  data-bs-target="#aboutSectionModal"
+                  data-bs-toggle="modal"
+                >
+                  What we do <i class="bi bi-info-circle"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- !aboutSectionModal -->
+        <div
+          class="modal fade"
+          id="aboutSectionModal"
+          data-bs-backdrop="static"
+          aria-hidden="true"
+          aria-labelledby="aboutSectionModalLabel"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <nav class="navbar navbar-expand">
+                  <div class="container-fluid">
+                    <span class="navbar-brand">About Us</span>
+                    <div class="">
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a href="#2008section" class="nav-link">2008</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#2014section" class="nav-link">2014</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#2020section" class="nav-link">2020</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#2022section" class="nav-link">2022</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+                <button
+                  type="button"
+                  class="btn btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body overflow-scroll" style="max-height: 400px">
+                <p>Lorem, ipsum dolor.</p>
+                <div id="2008section">
+                  <h3>In 2008</h3>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Nisi earum est temporibus? Dolorum officia placeat beatae,
+                    debitis distinctio incidunt ipsum qui perspiciatis
+                    doloremque quaerat asperiores repellendus tempora error esse
+                    ipsa. Ab, natus odio. Harum velit ullam ut iusto mollitia,
+                    rem doloremque, tenetur officia corrupti sunt atque.
+                    Doloremque possimus adipisci, quae ipsum non dolorem enim
+                    deleniti neque, sed quibusdam, expedita consequatur. Aliquam
+                    voluptate eaque repellendus alias quisquam, similique,
+                    quaerat itaque quod rerum unde dolor? Nulla eveniet hic,
+                    perspiciatis repellat officiis distinctio quisquam officia
+                    ipsum, placeat odit voluptatum magni accusantium voluptate
+                    cum, harum eos quasi architecto recusandae atque! Facere
+                    nemo qui ipsam?
+                  </p>
+                </div>
+                <div id="2014section">
+                  <h3>Going into 2014</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Autem veritatis perferendis fugiat, quas ratione facere
+                    laudantium! Placeat sapiente consequatur incidunt
+                    reprehenderit saepe omnis, corrupti quis ipsum, quos magnam
+                    vel distinctio nulla eveniet optio voluptas voluptatibus
+                    molestias expedita suscipit enim a vero ducimus libero quasi
+                    quisquam! Neque consectetur officia sint autem vitae
+                    exercitationem quisquam cupiditate, aperiam consequuntur
+                    alias magnam tenetur officiis similique, sed sapiente.
+                    Voluptatum consectetur sed, veniam nemo quo laudantium ut
+                    dolorum doloribus, nulla porro dolores inventore illum
+                    eveniet quis repellendus similique dignissimos, dolorem
+                    iusto reprehenderit sunt! Dolor eum, quo culpa maiores
+                    sapiente corrupti laborum obcaecati, eaque officiis iusto
+                    provident?
+                  </p>
+                </div>
+                <div id="2020section">
+                  <h3>From 2020</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                    esse ex voluptate, atque exercitationem rem explicabo in
+                    dolore expedita error numquam totam distinctio adipisci
+                    sapiente ullam asperiores vitae praesentium suscipit. Qui
+                    architecto consequuntur hic, quidem voluptates fuga voluptas
+                    atque pariatur voluptatum fugit totam est odit, nesciunt sed
+                    ipsam ea laborum veritatis expedita accusantium dolorum?
+                    Saepe harum velit culpa deserunt delectus sunt dicta veniam
+                    expedita ut nulla, enim distinctio sed minus cumque
+                    laboriosam corporis provident voluptates aliquam rem tempora
+                    ducimus magnam magni amet! Unde quod quasi animi autem
+                    obcaecati exercitationem temporibus neque libero illum
+                    soluta, est, minus ab odio rem sunt?
+                  </p>
+                </div>
+                <div id="2022section">
+                  <h3>From 2022</h3>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Architecto debitis ab qui quae delectus, ipsa ad, odit quas
+                    ducimus reprehenderit et, est exercitationem veritatis aut.
+                    Non sapiente excepturi officia officiis fugit commodi
+                    quaerat aspernatur odio. Quod cum incidunt harum porro
+                    suscipit doloribus saepe officiis temporibus debitis
+                    tempore, quas et iste adipisci rerum. Optio enim at quidem,
+                    similique ipsa deleniti omnis rerum. Labore, doloremque.
+                    Soluta dolorem magnam inventore ipsum iusto consequuntur
+                    dolore eligendi quod accusamus fuga quibusdam sit illo,
+                    beatae mollitia ea nisi sint, impedit quae officiis, in
+                    quidem magni cumque. Ipsa, et? Suscipit dolore, soluta
+                    quibusdam magni repudiandae cumque libero?
+                  </p>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-danger" data-bs-dismiss="modal">
+                  Close
+                </button>
               </div>
             </div>
           </div>
@@ -134,7 +328,15 @@
             <div class="card-body">
               <h5 class="card-title">John Doe</h5>
               <p class="card-text text-info">Advisor</p>
-              <button class="btn btn-info btn-sm">About John</button>
+              <button
+                class="btn btn-info btn-sm"
+                data-bs-toggle="popover"
+                title="John Doe"
+                data-bs-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, laboriosam!"
+                data-bs-trigger="focus"
+              >
+                About John
+              </button>
             </div>
           </div>
           <div class="col-lg-3 col-sm-6 card shadow">
@@ -146,7 +348,16 @@
             <div class="card-body">
               <h5 class="card-title">John Doe</h5>
               <p class="card-text text-info">Advisor</p>
-              <button class="btn btn-info btn-sm">About John</button>
+              <button
+                class="btn btn-info btn-sm"
+                data-bs-toggle="popover"
+                title="John doe"
+                data-bs-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, laboriosam!"
+                data-bs-placement="right"
+                data-bs-trigger="focus"
+              >
+                About John
+              </button>
             </div>
           </div>
           <div class="col-lg-3 col-sm-6 card shadow">
@@ -158,7 +369,16 @@
             <div class="card-body">
               <h5 class="card-title">John Doe</h5>
               <p class="card-text text-info">Advisor</p>
-              <button class="btn btn-info btn-sm">About John</button>
+              <button
+                class="btn btn-info btn-sm"
+                data-bs-trigger="focus"
+                data-bs-toggle="popover"
+                data-bs-placement="right"
+                title="John Doe"
+                data-bs-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. At, dignissimos."
+              >
+                About John
+              </button>
             </div>
           </div>
           <div class="col-lg-3 col-sm-6 card shadow">
@@ -170,7 +390,16 @@
             <div class="card-body">
               <h5 class="card-title">John Doe</h5>
               <p class="card-text text-info">Advisor</p>
-              <button class="btn btn-info btn-sm">About John</button>
+              <button
+                class="btn btn-info btn-sm"
+                data-bs-toggle="popover"
+                data-bs-placement="right"
+                data-bs-trigger="focus"
+                title="John Doe"
+                data-bs-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. At, dignissimos."
+              >
+                About John
+              </button>
             </div>
           </div>
         </div>
@@ -218,9 +447,14 @@
               </ul>
             </div>
             <div class="card-footer">
-              <button class="btn btn-outline-light shadow" type="button">
+              <a
+                href="#home"
+                class="btn btn-outline-light shadow"
+                role="button"
+                data-bs-target="#home"
+              >
                 Get Started
-              </button>
+              </a>
             </div>
           </div>
           <div class="card bg-info col">
@@ -266,7 +500,7 @@
               </ul>
             </div>
             <div class="card-footer">
-              <button class="btn btn-outline-light">Get Started</button>
+              <a class="btn btn-outline-light" href="#home">Get Started</a>
             </div>
           </div>
           <div class="card bg-primary text-white col">
@@ -300,7 +534,7 @@
               </ul>
             </div>
             <div class="card-footer">
-              <button class="btn btn-outline-light">Get Started</button>
+              <a href="#home" class="btn btn-outline-light">Get Started</a>
             </div>
           </div>
           <div class="card bg-info col text-dark">
@@ -326,13 +560,13 @@
               </ul>
             </div>
             <div class="card-footer">
-              <button class="btn btn-outline-light">Get Started</button>
+              <a href="#home" class="btn btn-outline-light">Get Started</a>
             </div>
           </div>
         </div>
       </section>
       <!-- !CONTACT -->
-      <section id="contact" class="mt-5 ">
+      <section id="contact" class="mt-5">
         <div class="container-fluid bg-light py-4">
           <div class="container">
             <h3 class="mb-4 text-info font-monospace">AK Pathak</h3>
@@ -349,11 +583,29 @@
               <div class="col-4">
                 <h3>Useful Links</h3>
                 <ul>
-                  <li><a class="text-decoration-none link-dark" href="#home">Home</a></li>
-                  <li><a class="text-decoration-none link-dark" href="#aboutus">About</a></li>
-                  <li><a class="text-decoration-none link-dark" href="#service">Service</a></li>
-                  <li><a class="text-decoration-none link-dark" href="#">Blog</a></li>
-                  <li><a class="text-decoration-none link-dark" href="#contact">Contact</a></li>
+                  <li>
+                    <a class="text-decoration-none link-dark" href="#home"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-decoration-none link-dark" href="#aboutus"
+                      >About</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-decoration-none link-dark" href="#service"
+                      >Service</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-decoration-none link-dark" href="#">Blog</a>
+                  </li>
+                  <li>
+                    <a class="text-decoration-none link-dark" href="#contact"
+                      >Contact</a
+                    >
+                  </li>
                 </ul>
               </div>
               <div class="col-4">
@@ -369,11 +621,23 @@
               <div class="col-4">
                 <h3>Contact Us</h3>
                 <ul class="list-group">
-                  <li class="list-group-item"><i class="bi bi-house-door text-info me-2"></i>Noida</li>
-                  <li class="list-group-item"><i class="bi bi-signpost-2 text-info me-2"></i>Village Chhalera</li>
-                  <li class="list-group-item"><i class="bi bi-telephone text-info me-2"></i>+91 9876654321</li>
-                  <li class="list-group-item"><i class="bi bi-envelope text-info me-2"></i>mail@akindustry.com</li>
-                  <li class="list-group-item"><i class="bi bi-globe text-info me-2"></i>www.akindustry.com</li>
+                  <li class="list-group-item">
+                    <i class="bi bi-house-door text-info me-2"></i>Noida
+                  </li>
+                  <li class="list-group-item">
+                    <i class="bi bi-signpost-2 text-info me-2"></i>Village
+                    Chhalera
+                  </li>
+                  <li class="list-group-item">
+                    <i class="bi bi-telephone text-info me-2"></i>+91 9876654321
+                  </li>
+                  <li class="list-group-item">
+                    <i class="bi bi-envelope text-info me-2"></i
+                    >mail@akindustry.com
+                  </li>
+                  <li class="list-group-item">
+                    <i class="bi bi-globe text-info me-2"></i>www.akindustry.com
+                  </li>
                 </ul>
               </div>
             </div>
@@ -393,5 +657,13 @@
         </div>
       </div>
     </footer>
+    <script>
+      var popoverTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="popover"]')
+      );
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl);
+      });
+    </script>
   </body>
 </html>
